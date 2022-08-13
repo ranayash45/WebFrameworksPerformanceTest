@@ -1,0 +1,190 @@
+{
+	"info": {
+		"_postman_id": "5446a600-e9fa-41e8-8493-c537bd7ca1ba",
+		"name": "ClientService",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ClientHello",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/Client/Upstream/Hello",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"Client",
+						"Upstream",
+						"Hello"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpstreamCallWith200ms",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/Client/Upstream/mock/execute",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"Client",
+						"Upstream",
+						"mock",
+						"execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpstreamCallWith400ms",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/Client/Upstream/mock/400/execute",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"Client",
+						"Upstream",
+						"mock",
+						"400",
+						"execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpstreamCallWith800ms",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/Client/Upstream/mock/800/execute",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"Client",
+						"Upstream",
+						"mock",
+						"800",
+						"execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpstreamCallWith2000ms",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/Client/Upstream/mock/2000/execute",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"Client",
+						"Upstream",
+						"mock",
+						"2000",
+						"execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpstreamCallWith404",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/Client/Upstream/mock/execute/status404",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"Client",
+						"Upstream",
+						"mock",
+						"execute",
+						"status404"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpstreamCallWith500",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/Client/Upstream/mock/execute/status500",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"Client",
+						"Upstream",
+						"mock",
+						"execute",
+						"status500"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpstreamCallWith503",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/Client/Upstream/mock/execute/status503",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"Client",
+						"Upstream",
+						"mock",
+						"execute",
+						"status503"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

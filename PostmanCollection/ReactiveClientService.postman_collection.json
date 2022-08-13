@@ -1,0 +1,321 @@
+{
+	"info": {
+		"_postman_id": "783b579e-573a-429e-9f3c-28ff9c22a4f3",
+		"name": "ReactiveClientService",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "WebClient",
+			"item": [
+				{
+					"name": "ReactiveClientHello",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8082/WebClient/Hello",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"WebClient",
+								"Hello"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ReactiveClientCallWith200ms",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8082/WebClient/Upstream/mock/execute",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"WebClient",
+								"Upstream",
+								"mock",
+								"execute"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ReactiveClientCallWith400ms",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8082/WebClient/Upstream/mock/400/execute",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"WebClient",
+								"Upstream",
+								"mock",
+								"400",
+								"execute"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ReactiveClientCallWith800ms",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8082/WebClient/Upstream/mock/800/execute",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"WebClient",
+								"Upstream",
+								"mock",
+								"800",
+								"execute"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ReactiveClientCallWith2000ms",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8082/WebClient/Upstream/mock/2000/execute",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"WebClient",
+								"Upstream",
+								"mock",
+								"2000",
+								"execute"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ReactiveClientCallWith503",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8082/WebClient/Upstream/mock/execute/status503",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"WebClient",
+								"Upstream",
+								"mock",
+								"execute",
+								"status503"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ReactiveClientCallWith404",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8082/WebClient/Upstream/mock/execute/status404",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"WebClient",
+								"Upstream",
+								"mock",
+								"execute",
+								"status404"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ReactiveClientCallWith500",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8082/WebClient/Upstream/mock/execute/status500",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"WebClient",
+								"Upstream",
+								"mock",
+								"execute",
+								"status500"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "RestTemplate",
+			"item": [
+				{
+					"name": "ClientHello",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "UpstreamCallwith200ms",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8082/Rest/mock/upstream/execute",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"Rest",
+								"mock",
+								"upstream",
+								"execute"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpstreamCallwith400ms",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8082/Rest/mock/upstream/400/execute",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"Rest",
+								"mock",
+								"upstream",
+								"400",
+								"execute"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpstreamCallwith800ms",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8082/Rest/mock/upstream/800/execute",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"Rest",
+								"mock",
+								"upstream",
+								"800",
+								"execute"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpstreamCallwith2000ms",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8082/Rest/mock/upstream/2000/execute",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"Rest",
+								"mock",
+								"upstream",
+								"2000",
+								"execute"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpstreamCallwith2000ms Copy",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8082/Rest/mock/upstream/2000/execute",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"Rest",
+								"mock",
+								"upstream",
+								"2000",
+								"execute"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

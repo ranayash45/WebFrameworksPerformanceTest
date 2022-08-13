@@ -1,0 +1,95 @@
+{
+	"info": {
+		"_postman_id": "3c1cc024-c25f-4c6d-a5c4-7bfd6ea9d10b",
+		"name": "MockService",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Hello",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Test/Hello",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Test",
+						"Hello"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "mockUpstreamCall",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Test/mockUpstream/200/execute",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Test",
+						"mockUpstream",
+						"200",
+						"execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "mockUpstreamCallwithStatus",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Test/mockUpstream/200/execute/404",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Test",
+						"mockUpstream",
+						"200",
+						"execute",
+						"404"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "mockUpstreamRequestData",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Test/mockUpstream/sentCommand",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Test",
+						"mockUpstream",
+						"sentCommand"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
